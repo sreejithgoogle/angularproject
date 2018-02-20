@@ -8,8 +8,12 @@ import {
    debounceTime, distinctUntilChanged, switchMap
  } from 'rxjs/operators';
 
+/* Declare reactive extensions for Javascript library */
+
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+
+/* Declare the components */
 
 @Component({
   selector: 'app-hero-search',

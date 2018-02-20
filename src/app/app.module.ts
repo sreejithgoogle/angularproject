@@ -10,7 +10,7 @@ import { AppRoutingModule }     from './app-routing.module';
 
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
-import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
+import { HeroDetailComponent }  from './hero-detail/hero-detail.component';    /* Import using components and modules */
 import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { HeroService }          from './hero.service';
@@ -34,12 +34,12 @@ import { MessagesComponent }    from './messages/messages.component';
   declarations: [
     AppComponent,
     DashboardComponent,
-    HeroesComponent,
+    HeroesComponent,                        /* add the component using */
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent
   ],
-  providers: [ HeroService, MessageService ],
-  bootstrap: [ AppComponent ]
+  providers: [ HeroService, MessageService ],  /* add the providers using */
+  bootstrap: [ AppComponent ]                   /* add the bootstrap */
 })
 export class AppModule { }
