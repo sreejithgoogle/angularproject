@@ -3,13 +3,13 @@
 Step1 : Clone the repositery
 ----------------------------
 
-git clone https://github.com/sreejithgoogle/reactproject.git  reactproject
+git clone https://github.com/sreejithgoogle/angularproject.git  angularproject
 
 
 Step2 : Go into the new directory
 ---------------------------------
 
-cd reactproject
+cd angularproject
 
 
 Step3 : Install dependencies 
@@ -21,7 +21,9 @@ npm install
 Step4 : Run the project
 -----------------------
 
-npm start
+ng serve
 
 
-the project will be opened in a new tab in the browser
+Copy below url and paste in a new tab in the browser
+
+ http://localhost:4200
