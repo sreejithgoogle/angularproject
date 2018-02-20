@@ -1,7 +1,9 @@
 <div id="search-component">
   <h4>Hero Search</h4>
 
-  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />   <!-- input field for find the hero name -->
+
+  <!-- List the hero search -->
 
   <ul class="search-result">
     <li *ngFor="let hero of heroes$ | async" >
@@ -10,4 +12,6 @@
       </a>
     </li>
   </ul>
+
+  <!-- List the hero search -->
 </div>

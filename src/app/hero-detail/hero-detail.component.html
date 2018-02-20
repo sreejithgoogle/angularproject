@@ -1,11 +1,10 @@
 <div *ngIf="hero">
-  <h2>{{ hero.name | uppercase }} Details</h2>
-  <!--<div><span>id: </span>{{hero.id}}</div>-->
+  <h2>{{ hero.name | uppercase }} Details</h2>     <!-- hero name -->
   <div>
     <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name"/>
+      <input [(ngModel)]="hero.name" placeholder="name"/>    <!-- input field for enter hero name -->
     </label>
   </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
+  <button (click)="goBack()">go back</button>    <!-- go to previous page option -->
+  <button (click)="save()">save</button>        <!-- option for save changes made in input field -->
 </div>

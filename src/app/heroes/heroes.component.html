@@ -1,5 +1,7 @@
 <h2>My Heroes</h2>
 
+<!-- section for add new hero -->
+
 <div>
   <label>Hero name:
     <input #heroName />
@@ -10,12 +12,20 @@
   </button>
 </div>
 
+<!-- section for add new hero -->
+
+<!-- section for list heroes -->
+
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
+    <!-- click here to go hero detail page -->
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
+    <!-- click here for delete hero from the list -->
     <button class="delete" title="delete hero"
     (click)="delete(hero)">x</button>
   </li>
 </ul>
+
+<!-- section for list heroes -->

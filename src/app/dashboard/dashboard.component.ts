@@ -16,6 +16,8 @@ export class DashboardComponent implements OnInit {
     this.getHeroes();
   }
 
+  /* functionality for listing heroes in dashboard(listing limited to 4, change the list number 'slice(1, X)' we get more heroes) */
+
   getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes.slice(1, 5));

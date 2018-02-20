@@ -25,7 +25,7 @@ export class HeroDetailComponent implements OnInit {
     this.getHero();
   }
 
-  /* use for get a hero detail */
+  /* functionality for get the hero list */
 
   getHero(): void {
     const id = +this.route.snapshot.paramMap.get('id');
@@ -33,13 +33,13 @@ export class HeroDetailComponent implements OnInit {
       .subscribe(hero => this.hero = hero);
   }
 
-  /* When user click goback button below function work */
+  /* Funtionality for go to previous page */
 
   goBack(): void {
     this.location.back();
   }
 
-  /* When user click save button below function work */
+  /* funtionality for save the hero name */
 
  save(): void {
     this.heroService.updateHero(this.hero)    /* updateHero function included in hero.service.ts */
